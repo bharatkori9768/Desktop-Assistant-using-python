@@ -1,19 +1,37 @@
 # Desktop-Assistant-using-python
+  
 
-conda create -n assistant python=3.7
+## how to run:
 
+1. create a virtual enviroment
+'''bash
+conda create -n assistant python=3.8
+
+'''
+
+
+2. checkout enviromrnt is created or not
+'''bash
 conda env list
 
-conda activate assitant
+'''
+
+3. actrivate that  env
+'''bash
+conda activate assistant
+
+'''
+4.install all requrement
+'''bash
+pip install -r requirements.txt
+
+'''
 
 python
 
 exit()
 
 pip list
-
-
-
 
 
  create a new repository in command line 
@@ -42,4 +60,7 @@ once git acount is added
 
 git add . 
 git commit -m "updated"
-git push origin manin
+git push origin main
+
+
+pip install -r requirements.txt
