@@ -4,63 +4,69 @@
 ## how to run:
 
 1. create a virtual enviroment
-'''bash
+```bash
 conda create -n assistant python=3.8
 
-'''
+```
 
 
 2. checkout enviromrnt is created or not
-'''bash
+```bash
 conda env list
 
-'''
+```
 
 3. actrivate that  env
-'''bash
+```bash
 conda activate assistant
 
-'''
+```
 4.install all requrement
-'''bash
+```bash
 pip install -r requirements.txt
 
-'''
+```
 
+5. python version chek
+```bash
 python
 
 exit()
 
+```
+6. check list of all modules installed
+```bash
 pip list
 
+```
 
- create a new repository in command line 
+7. create a new repository in command line and push data for 1st time in that git account 
+```bash
 git init
 git add READEME.md
 
 git commit -m "first commit"
-git config --global user.email "bharat786786786@gmail.com"
-git config --global user.name "bharatkori9768"
+git config --global user.email "main@gmail.com"
+git config --global user.name "usename"
 git branch -M main
-git remote add origin https://github.com/bharatkori9768/Desktop-Assistant-using-python.git
+git remote add origin capy paste repo https link
 error -remote origin already exist error
 git remote remove origin 
-git remote add origin https://github.com/bharatkori9768/Desktop-Assistant-using-python.git
+git remote add origin copy paste repo https link
 git push -u origin main
 
+```
 
-or push an existing repo from the command line
-git remote add origin https:
-git branch -M main
-git push -u origin main
-
+8. cloing public repo in vscode
+```bash 
 git clone https paste git url
 
-once git acount is added
+```
 
+9. once git acount is added
+```bash
 git add . 
 git commit -m "updated"
 git push origin main
 
-
-pip install -r requirements.txt
+```
