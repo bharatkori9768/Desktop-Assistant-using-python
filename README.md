@@ -37,3 +37,9 @@ git branch -M main
 git push -u origin main
 
 git clone https paste git url
+
+once git acount is added
+
+git add . 
+git commit -m "updated"
+git push origin manin
