@@ -54,5 +54,5 @@ def takeCommand():
             return "None"
         return query
 
-text = takeCommand()
-speak(text)
+text = takeCommand()   # this will text whati say
+speak(text)           # speak that text
