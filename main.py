@@ -33,6 +33,9 @@ def speak(text):
 
 
 
+
+
+
 # speech recognition function
 
 def takeCommand():
@@ -54,5 +57,56 @@ def takeCommand():
             return "None"
         return query
 
-text = takeCommand()   # this will text whati say
-speak(text)           # speak that text
+#text = takeCommand()   # this will text whati say
+#speak(text)           # speak that text
+# if __name__ == "__main__":
+# # wish me
+#while True:
+def wishme():
+    hour = (datetime.datetime.now().hour)
+    if hour >= 0 and hour < 12:
+        speak("good morning bharat. how are you?")
+        
+    elif hour >= 12 and hour < 18:
+        speak("good afternoon bharat. what did you eat?")   
+    
+    else:
+        speak("go to sleep")
+
+if __name__ == "__main__":
+    
+    wishme()
+    
+    while True:
+        query = takeCommand().lower()
+        #print(query)
+        if "wikipedia" in query:
+            speak("wikipedia is searching")
+            query = query.replace("wikipedia","")
+            #print(query)
+            results = wikipedia.summary(query,sentences = 2)
+            speak("according to wikipedia")
+            print(results)
+            speak(results)
+            
+        elif "youtube" in query:
+            speak("searching and opening on youtube")
+            webbrowser.open("youtube.com")
+            
+        elif "google" in query:
+            speak("searching in google")
+            webbrowser.open("google.com")
+            
+        elif "github" in query:
+            speak("open git")
+            webbrowser.open("github.com")
+            
+        elif "good bye" in query:
+            speak("ok sir bye-bye")
+            exit()
+            
+        elif "time" in query:
+            strTime = datetime.datetime.now().strftime("%H:%M:%S")
+            speak(f"sir the time is{strTime}")
+        
+           
